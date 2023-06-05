@@ -387,7 +387,7 @@
 %\the计数器，显示计数器的值，该命令只使用于序号计数器，例如\thepage显示当前页码。\value{计数器}调用计数器的值，无论计数器的计数形式如何都被转换成对应的阿拉伯数字。 \S 标题前加特数符号
 \counterwithin{figure}{chapter} % 设置对应计数器每章重置
 \counterwithin{table}{chapter} % 设置对应计数器每章重置
-\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}} % 显示公式编号，其格式x-x
+\renewcommand{\theequation}{公式 \arabic{chapter}.\arabic{equation}} % 显示公式编号，其格式x-x
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}} % 显示表格编号，其格式x-x
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}} % 显示插图编号，其格式x-x
 %chapter章序号计数器，section节序号计数器，subsection小节序号计数器，subsubsection小小节序号计数器，paragraph段序号计数器，figure插图序号计数器，table表格序号计数器，page页码序号计数器，equation公式序号计数器
