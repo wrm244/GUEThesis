@@ -145,10 +145,10 @@
 
 
 \hypersetup{ % 文中链接以及PDF信息相关设置
-  pdfauthor = {\theauthor},           % 设置作者名称；
-  pdftitle = {\zh@thetitle},          % 设置文档的标题；
-  pdfsubject = {\displayheader},      % 设置文档主题；
-  % pdfkeywords = {},         % 设置文档中关键词；
+  % pdfauthor = {\theauthor},           % 设置作者名称；
+  % pdftitle = {\zh@thetitle},          % 设置文档的标题；
+  % pdfsubject = {\displayheader},      % 设置文档主题；
+  % % pdfkeywords = {},         % 设置文档中关键词；
   colorlinks=true,          % 指定是否给链接添加颜色；
   citecolor=black,          % citecolor链接颜色设置；
   linkcolor=black,          % linkcolor引用颜色设置；
