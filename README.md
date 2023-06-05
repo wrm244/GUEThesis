@@ -1,4 +1,4 @@
-# 桂林电子科技大学本科毕业论文LATEX模板
+# 桂林电子科技大学本科毕业论文LATEX模板 <img src="./Docs/GUETLOGO.png" width="90" height="90" align="right">
 
 此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板类，旨在帮助桂林电子科技大学的毕业生高效地完成毕业论文的写作。本模板由项目[Guet_LATEX_Thesis_Template](https://github.com/YanMing-lxb/Guet_LATEX_Thesis_Template)精简过来，原本本科、研究生都可以切换，但考虑到样式冗杂，现单独出本科毕业论文模板,希望该项目能够继续发展，解决各位同学毕业论文写作中的困难。
 
@@ -27,7 +27,6 @@ git clone https://github.com/wrm244/GUEThsis.git
 **<font color="#d83931">注意</font>**：如果在 Windows 平台下使用 MiKTeX 还需要安装[Perl 语言解释器](http://strawberryperl.com/)，方可使用 latexmk 进行编译。
 
 编译时只需使用 latexmk 即可完成编译。
-
 #### 编辑器
 
 推荐使用 Visual Code Studio 编辑器。
@@ -43,6 +42,35 @@ git clone https://github.com/wrm244/GUEThsis.git
 
 - 使用 LaTeX 转 Word 是通过 Pandoc 来实现，因此需要配置好 Pandoc；
 - 目前尚且存在转换后，图片不存在的问题（由于 pandoc 不支持读取多个文件夹图片的原因）。
+
+### Github Action 自动化集成
+
+在仓库中提供CI/CD执行编译渲染PDF流程，你只要FORK这个仓库，然后本地编写或者直接通过github网页直接编写后push到你的github仓库，即可自动渲染,以下是ACTION配置代码：
+```yml
+name: Build LaTeX document
+on:
+    push:
+      branches: [ main ]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: main.tex
+          latexmk_use_xelatex: true
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: main.pdf
+          
+```
+下载渲染后的PDF是在这个位置：
+![action](Docs/action.png)
 
 ## 模板说明
 
@@ -90,6 +118,6 @@ git clone https://github.com/wrm244/GUEThsis.git
 - Latex 画图画表常用命令 https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions#Tip
 
 ## 软件许可证
-桂林电子科技大学校徽图片的版权归桂林电子科技大学所有。
+桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README的校徽仅仅作为标识，如有侵权请点击联系[邮箱](mailto:wrm244@139.com)。
 
 其他部分使用 [LPPL](https://www.latex-project.org/lppl/) 授权。
