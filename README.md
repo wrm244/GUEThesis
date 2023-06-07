@@ -1,7 +1,23 @@
-# 桂林电子科技大学本科毕业论文LaTex模板 <img src="./Docs/GUETLOGO.png" width="90" height="90" align="right">
+## 桂林电子科技大学本科毕业论文LaTex模板 <img src="./Docs/GUETLOGO.png" width="90" height="90" align="right">
 
 此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。本模板由项目[Guet_LATEX_Thesis_Template](https://github.com/YanMing-lxb/Guet_LATEX_Thesis_Template)精简过来，原本本科、研究生都可以切换，但考虑到样式冗杂，现单独出本科毕业论文模板，希望该项目能够继续发展，解决各位同学毕业论文写作的同时也参与贡献进来。
 
+## 模板示例
+
+<figure class="half">
+    <img src="./Docs/main_页面_01.png" width="250">
+    <img src="./Docs/main_页面_02.png" width="250">
+</figure>
+
+<figure class="half">
+    <img src="./Docs/main_页面_03.png" width="250">
+    <img src="./Docs/main_页面_05.png" width="250">
+</figure>
+
+<figure class="half">
+    <img src="./Docs/main_页面_07.png" width="250">
+    <img src="./Docs/main_页面_17.png" width="250">
+</figure>
 ## 获取模板
 
 ### 下载模板
