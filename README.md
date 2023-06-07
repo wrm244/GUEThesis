@@ -4,20 +4,15 @@
 
 ## 模板示例
 
-<figure class="half">
-    <img src="./Docs/main_页面_01.png" width="250">
-    <img src="./Docs/main_页面_02.png" width="250">
-</figure>
+<center class="half">
+    <img src="./Docs/main_页面_01.png" width="250"/> <img src="./Docs/main_页面_02.png" width="250"/></center>
 
-<figure class="half">
-    <img src="./Docs/main_页面_03.png" width="250">
-    <img src="./Docs/main_页面_05.png" width="250">
-</figure>
+<center class="half">
+    <img src="./Docs/main_页面_03.png" width="250"/> <img src="./Docs/main_页面_05.png" width="250"/></center>
 
-<figure class="half">
-    <img src="./Docs/main_页面_07.png" width="250">
-    <img src="./Docs/main_页面_17.png" width="250">
-</figure>
+<center class="half">
+    <img src="./Docs/main_页面_07.png" width="250"/> <img src="./Docs/main_页面_17.png" width="250"/></center>
+
 ## 获取模板
 
 ### 下载模板
