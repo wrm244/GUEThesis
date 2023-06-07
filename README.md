@@ -4,7 +4,7 @@
 
 ## 模板示例
 
-<img src="./Docs/main_页面_01.png" width="250"/><img src="./Docs/main_页面_02.png" width="250"/><img src="./Docs/main_页面_03.png" width="250"/><img src="./Docs/main_页面_05.png" width="250"/><img src="./Docs/main_页面_07.png" width="250"/><img src="./Docs/main_页面_17.png" width="250"/>
+<img src="./Docs/main_页面_01.png" width="350"/><img src="./Docs/main_页面_02.png" width="350"/><img src="./Docs/main_页面_03.png" width="350"/><img src="./Docs/main_页面_05.png" width="350"/><img src="./Docs/main_页面_07.png" width="350"/><img src="./Docs/main_页面_17.png" width="350"/>
 
 ## 获取模板
 
