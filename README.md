@@ -5,13 +5,13 @@
 ## 模板示例
 
 <center class="half">
-    <img src="./Docs/main_页面_01.png" width="250"/> <img src="./Docs/main_页面_02.png" width="250"/></center>
+    <img src="./Docs/main_页面_01.png" width="250"/><img src="./Docs/main_页面_02.png" width="250"/></center>
 
 <center class="half">
-    <img src="./Docs/main_页面_03.png" width="250"/> <img src="./Docs/main_页面_05.png" width="250"/></center>
+    <img src="./Docs/main_页面_03.png" width="250"/><img src="./Docs/main_页面_05.png" width="250"/></center>
 
 <center class="half">
-    <img src="./Docs/main_页面_07.png" width="250"/> <img src="./Docs/main_页面_17.png" width="250"/></center>
+    <img src="./Docs/main_页面_07.png" width="250"/><img src="./Docs/main_页面_17.png" width="250"/></center>
 
 ## 获取模板
 
