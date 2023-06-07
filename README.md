@@ -9,7 +9,12 @@
 
 ## 获取模板
 
-### 下载模板
+### Overleaf
+可以直接使用我们已经上传好的Overleaf在线模板：
+
+[![Overleaf](https://img.shields.io/badge/Overleaf-GUEThesis-green.svg)](https://www.overleaf.com/latex/templates/gui-lin-dian-zi-ke-ji-da-xue-ben-ke-bi-ye-lun-wen-latexmo-ban/nbynzyvwvndg)
+
+### 下载模板本地编译
 
 ```
 git clone https://github.com/wrm244/GUEThsis.git
