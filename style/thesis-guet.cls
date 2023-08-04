@@ -1,5 +1,5 @@
 %此文件为全局设置
-\ProvidesClass{thesis-guet}
+\ProvidesClass{./style/thesis-guet}
 
 \LoadClass[12pt,a4paper, openany, twoside]{book} % openright,openany
 \RequirePackage{ifxetex} %需要ifxetex，在LaTeX类和包文件中使用另一个包文件：ifxetex
@@ -170,9 +170,9 @@
   \begin{textblock}{15}(3,3.2)
     \centering
     \ifOptionPrintVersion
-    {\includegraphics[width=0.95 \textwidth]{./Pictures/Guet-logo-black.pdf}}
+    {\includegraphics[width=0.95 \textwidth]{./image/Guet-logo-black.pdf}}
     \else
-    {\includegraphics[width=0.95 \textwidth]{./Pictures/Guet-logo.pdf}}
+    {\includegraphics[width=0.95 \textwidth]{./image/Guet-logo.pdf}}
     \fi
   \end{textblock}
   % ================设置大题目
@@ -313,7 +313,7 @@
 
 
 % ===============字体设置===============
-\newCJKfontfamily{\kaiti}[AutoFakeBold=true,Path = ./Fonts/]{GB2312.ttf} %楷体
+\newCJKfontfamily{\kaiti}[AutoFakeBold=true,Path = ./fonts/]{GB2312.ttf} %楷体
 \ifwindows
   \setCJKmainfont[AutoFakeBold=true]{SimSun} %设置xeCJK 中文主字体
   \newCJKfontfamily{\heiti}[AutoFakeBold=true]{SimHei}
@@ -326,14 +326,14 @@
     \newfontfamily{\heiti@letter}{STHeiti}
     \setallmainfonts{Times New Roman}
   \else
-    \setCJKmainfont[AutoFakeBold=true,Path = ./Fonts/]{fzsong.ttf}
-    \newCJKfontfamily{\heiti}[AutoFakeBold=true,Path = ./Fonts/]{fzhei.ttf}
-    \newfontfamily{\heiti@letter}{fzhei.ttf}[Path = ./Fonts/]
+    \setCJKmainfont[AutoFakeBold=true,Path = ./fonts/]{fzsong.ttf}
+    \newCJKfontfamily{\heiti}[AutoFakeBold=true,Path = ./fonts/]{fzhei.ttf}
+    \newfontfamily{\heiti@letter}{fzhei.ttf}[Path = ./fonts/]
     \setallmainfonts[
       BoldFont=timesbd.ttf,
       ItalicFont=timesi.ttf,
       BoldItalicFont=timesbi.ttf,
-      Path = ./Fonts/
+      Path = ./fonts/
     ]{times.ttf}
   \fi
 \fi
@@ -747,7 +747,7 @@
   \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref {LastPage} 页 }
   \thispagestyle{fancy}
   \normalsize % 设置字体为小四
-  \input{Chapters/Thanks.tex} % 致谢文档位置
+  \input{chapters/thanks.tex} % 致谢文档位置
   \renewcommand{\bachelorchapterformat}{}
 }
 
@@ -869,11 +869,11 @@
   }{
     \setlength{\labelsep}{3pt}
     \renewcommand{\bstlabelmark}{loo}
-    \bibliographystyle{./References/thesis-guet(base-gbt7714-numerical).bst} %插入参考文献的样式.bst文件
+    \bibliographystyle{./references/thesis-guet(base-gbt7714-numerical).bst} %插入参考文献的样式.bst文件
     \bibliography{#2}
     \setlength{\labelsep}{6pt}
   }{
-    \bibliographystyle{./References/thesis-guet(base-gbt7714-numerical).bst} %插入参考文献的样式.bst文件
+    \bibliographystyle{./references/thesis-guet(base-gbt7714-numerical).bst} %插入参考文献的样式.bst文件
     \bibliography{#2} %参考文献格式，用于指定排版参考文献所使用的文献格式文件名.bib
   }
 }

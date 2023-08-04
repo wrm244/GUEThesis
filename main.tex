@@ -1,14 +1,14 @@
 % -------------------------------------------------------------------
 %     前言区域
 % -------------------------------------------------------------------
-\documentclass[eversion]{thesis-guet} 
+\documentclass[eversion]{./style/thesis-guet} 
 % eversion:电子版 pversion:打印版
 % \usepackage{showframe} % 显示排版框架
 % \TPshowboxestrue % 显示textblock 框架，方便调整位置
 
 \usepackage{color} % 高亮显示用
 \definecolor{shadecolor}{RGB}{255,204,75} % 定义高亮颜色
-\graphicspath{{./Pictures/},{./Pictures/Chapter1/},{./Pictures/Chapter2/},{./Pictures/Chapter3/},{./Pictures/Chapter4/},{./Pictures/Chapter5/}} % 图片所在位置
+\graphicspath{{./image/},{./image/Chapter1/},{./image/Chapter2/}}% 图片所在位置
 
 % ------------------------------------------------------------
 %     封面信息
@@ -33,18 +33,18 @@
 \originalitydeclaration   % 独创性声明
 % \signatureofdeclaration{独创性声明(示例).pdf} 
 % 可使用已签字的扫面版独创性声明PDF文件
-\input{Chapters/Abstract}    % 摘要
+\input{chapters/abstract}    % 摘要
 \thesistableofcontents       % 目录
 % --------------------------------------------------------------------
-\input{Chapters/Chapter1}
-\input{Chapters/Chapter2}
-\input{Chapters/Chapter3}
-\input{Chapters/Chapter4}
-\input{Chapters/Chapter5}   % 可根据需求自行添加章节数
-\input{Chapters/Conclusion} % 总结与展望
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}   % 可根据需求自行添加章节数
+\input{chapters/conclusion} % 总结与展望
 % --------------------------------------------------------------------
-\thesisbibliography{./References/reference.bib}                        % 参考文献
-% 如\thesisbibliography{large}{./References/reference.bib} 当参考文献数目超过100时，可以使用large选项调整编号
+\thesisbibliography{./references/reference.bib}                        % 参考文献
+% 如\thesisbibliography{large}{./references/reference.bib} 当参考文献数目超过100时，可以使用large选项调整编号
 
 % -------------------------------------------------------------------
 % 此处一般不用，除非要自定义参考文献样式，更换参考文献样式文件
