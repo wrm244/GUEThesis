@@ -1,10 +1,10 @@
-## 桂林电子科技大学本科毕业论文LaTex模板 <img src="./Docs/GUETLOGO.png" width="90" height="90" align="right">
+## 桂林电子科技大学本科毕业论文LaTex模板 <img src="./docs/GUETLOGO.png" width="90" height="90" align="right">
 
 此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。本模板由项目[Guet_LATEX_Thesis_Template](https://github.com/YanMing-lxb/Guet_LATEX_Thesis_Template)精简过来，原本本科、研究生都可以切换，但考虑到样式冗杂，现单独出本科毕业论文模板，希望该项目能够继续发展，解决各位同学毕业论文写作的同时也参与贡献进来。
 
 ## 模板示例
 <p align=center>
-<img src="./Docs/main_页面_01.png" width="370"/><img src="./Docs/main_页面_02.png" width="370"/><img src="./Docs/main_页面_03.png" width="370"/><img src="./Docs/main_页面_05.png" width="370"/><img src="./Docs/main_页面_07.png" width="370"/><img src="./Docs/main_页面_17.png" width="370"/>
+<img src="./docs/main_页面_01.png" width="370"/><img src="./docs/main_页面_02.png" width="370"/><img src="./docs/main_页面_03.png" width="370"/><img src="./docs/main_页面_05.png" width="370"/><img src="./docs/main_页面_07.png" width="370"/><img src="./docs/main_页面_17.png" width="370"/>
 </p>
 
 ## 获取模板
@@ -42,11 +42,11 @@ git clone https://github.com/wrm244/GUEThsis.git
 推荐使用 Visual Code Studio 编辑器。
 
 1. Visual Code Studio 中安装 LaTeX Workshop 插件；
-2. 所需的配置设置请看：[Visual*Code_Studio*中 LaTeX_Workshop 的设置说明](./Docs/Visual_Code_Studio_%E4%B8%ADLaTeX_Workshop%E7%9A%84%E8%AE%BE%E7%BD%AE%E8%AF%B4%E6%98%8E.md)
+2. 所需的配置设置请看：[Visual*Code_Studio*中 LaTeX_Workshop 的设置说明](./docs/Visual_Code_Studio_%E4%B8%ADLaTeX_Workshop%E7%9A%84%E8%AE%BE%E7%BD%AE%E8%AF%B4%E6%98%8E.md)
 
 #### 转 word 格式
 
-请看：[转 word 命令](./Docs/%E8%BD%ACword%E5%91%BD%E4%BB%A4.md)
+请看：[转 word 命令](./docs/%E8%BD%ACword%E5%91%BD%E4%BB%A4.md)
 
 **注意：**
 
@@ -80,7 +80,7 @@ jobs:
           
 ```
 下载渲染后的PDF是在这个位置：
-![action](Docs/action.png)
+![action](docs/action.png)
 
 ## 模板说明
 
