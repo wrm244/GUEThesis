@@ -61,7 +61,7 @@
 \RequirePackage{ifthen}
 \RequirePackage[capitalize]{cleveref} % 要在 hyperref后引用 noabbrev 引用前缀为缩写
 \RequirePackage{lastpage} % 统计总页数宏
-
+\RequirePackage{color} % 高亮显示用
 
 % ===============定义 eversion/pversion 选项===============
 \newif\ifOptionPrintVersion % 定义逻辑变量 OptionPrintVersion
