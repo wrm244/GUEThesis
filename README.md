@@ -1,6 +1,6 @@
 ## 桂林电子科技大学本科毕业论文LaTex模板 <img src="./docs/GUETLOGO.png" width="90" height="90" align="right">
 
-此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。本模板由项目[Guet_LATEX_Thesis_Template](https://github.com/YanMing-lxb/Guet_LATEX_Thesis_Template)精简过来，原本本科、研究生都可以切换，但考虑到样式冗杂，现单独出本科毕业论文模板，希望该项目能够继续发展，解决各位同学毕业论文写作的同时也参与贡献进来。
+此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。本模板由项目[Guet_LATEX_Thesis_Template](https://github.com/YanMing-lxb/Guet_LATEX_Thesis_Template)精简过来，原本本科、研究生都可以切换，但考虑到样式冗杂，现单独精简本科毕业论文模板。桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README与论文的校徽仅仅作为标识，如有侵权请联系[邮箱](mailto:wrm244@qq.com)，将会删除。
 
 ## 模板示例
 <p align=center>
@@ -128,6 +128,6 @@ jobs:
 - Latex 画图画表常用命令 https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions#Tip
 
 ## 软件许可证
-桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README的校徽仅仅作为标识，如有侵权请点击联系[邮箱](mailto:wrm244@139.com)。
+桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README与论文的校徽仅仅作为标识，如有侵权请联系[邮箱](mailto:wrm244@qq.com)，将会删除。
 
 其他部分使用 [LPPL](https://www.latex-project.org/lppl/) 授权。
