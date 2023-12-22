@@ -1,68 +1,72 @@
-%此文件为全局设置
-\ProvidesClass{thesis-guet}
+% ========== 全局设置 ==========
+\ProvidesClass{thesis-guet} % 提供thesis-guet文档类
 
-\LoadClass[12pt,a4paper, openany, twoside]{book} % openright,openany
-\RequirePackage{ifxetex} %需要ifxetex，在LaTeX类和包文件中使用另一个包文件：ifxetex
-\RequireXeTeX %需要使用XeLatex编译tex文件，不然会报错。
-\RequirePackage[dvipsnames,svgnames,table]{xcolor}
-\RequirePackage{graphicx} % 图片
-\RequirePackage[font={onehalfspacing, small}, labelsep=space, skip=6pt, figurewithin=none, tablewithin=none]{caption} % figurewithin=none, tablewithin=none 将book 类中向figure of list 添加 10pt间距的命令取消，但也会使得图表章与章之间连续编号，因此需要设置对应计数器每章重置
-\RequirePackage{array}
-\RequirePackage{booktabs} % 三线表
+% ========== 基础设置 ==========
+\LoadClass[12pt,a4paper, openany, twoside]{book} % 使用book文档类，设置字体大小、纸张大小、章节起始位置
+
+% ========== 必要的宏包 ==========
+\RequirePackage{ifxetex} % 检查是否为XeTeX编译
+\RequirePackage[dvipsnames,svgnames,table]{xcolor} % 使用颜色宏包
+\RequirePackage{graphicx} % 图形处理宏包
+\RequirePackage[font={onehalfspacing, small}, labelsep=space, skip=6pt, figurewithin=none, tablewithin=none]{caption} % 图表标题设置宏包
+\RequirePackage{array} % 表格宏包
+\RequirePackage{booktabs} % 三线表宏包
 \RequirePackage{makecell} % 设置封面表格部分横线的宽度
-\RequirePackage[absolute,overlay]{textpos} % 设置密级用的文本框，overlay绝对坐标。可以随意控制文本框位置
-\RequirePackage{setspace} % 调整行距宏包，提供\setstretch命令和spacing环境
-\RequirePackage{multirow}
-\RequirePackage[tbtags]{amsmath}
-\RequirePackage{amssymb}
-\RequirePackage{amsthm}
-\RequirePackage{lmodern}
-\RequirePackage[nopostdot]{glossaries} %不显示description后的英文标点符号
-\RequirePackage{mathspec}
+\RequirePackage[absolute,overlay]{textpos} % 设置文本框位置的宏包
+\RequirePackage{setspace} % 行距宏包
+\RequirePackage{multirow} % 多行合并表格宏包
+\RequirePackage[tbtags]{amsmath} % 数学环境宏包
+\RequirePackage{amssymb} % 数学符号宏包
+\RequirePackage{amsthm} % 定理环境宏包
+\RequirePackage{lmodern} % Latin Modern字体宏包
+\RequirePackage[nopostdot]{glossaries} % 符号说明宏包
+\RequirePackage{mathspec} % 数学字体宏包
 \RequirePackage{xeCJK} % 对全局字体进行设置
-\RequirePackage{datetime}
-\RequirePackage{ifplatform}
+\RequirePackage{datetime} % 日期时间宏包
+\RequirePackage{ifplatform} % 判断操作系统宏包
 
-% ===============符号说明相关宏===============
-\RequirePackage{framed} % Framing content
-\RequirePackage{multicol} % Multiple columns environment
-\RequirePackage[]{nomencl} % Nomenclature package %noprefix % 符号说明的宏包
-% ===============不清楚===============
-\RequirePackage{zhnumber} % 大写中文数字
-\RequirePackage{pifont}
-\RequirePackage[hyphens]{xurl}
+% ========== 符号说明相关宏 ==========
+\RequirePackage{framed} % Framing content宏包
+\RequirePackage{multicol} % Multiple columns environment宏包
+\RequirePackage[]{nomencl} % Nomenclature package宏包
+
+% ========== 不清楚 ==========
+\RequirePackage{zhnumber} % 大写中文数字宏包
+\RequirePackage{pifont} % Pifont宏包
+\RequirePackage[hyphens]{xurl} % 处理长链接宏包
 \RequirePackage[
-  unicode,                  % unicode设置是否使用unicode字符集
-  pdfencoding=auto,         % unicode,pdfencoding=auto 用来解决PDF警告 
-  bookmarks=true,           % 设置pdf文件是否有书签；
-  hyperfootnotes=false,     % 设置是否在脚注中生成链接；
-  bookmarksnumbered=true,   % 设置PDF书签是否带编号；
-  bookmarksdepth=4          % 设置书签深度；
-]{hyperref} % 书签设置宏包 
+  unicode,
+  pdfencoding=auto,
+  bookmarks=true,
+  hyperfootnotes=false,
+  bookmarksnumbered=true,
+  bookmarksdepth=4
+]{hyperref} % 书签设置宏包
 
-\RequirePackage{indentfirst}
-\RequirePackage{float}
-\RequirePackage{fancyvrb}
+\RequirePackage{indentfirst} % 首段缩进宏包
+\RequirePackage{float} % 浮动体宏包
+\RequirePackage{fancyvrb} % Fancy verbatim宏包
 \RequirePackage{fancyhdr} % 页眉设置宏包
-\RequirePackage{titlesec}
-\RequirePackage{appendix}
+\RequirePackage{titlesec} % 章节标题设置宏包
+\RequirePackage{appendix} % 附录设置宏包
 \RequirePackage[numbers,sort&compress,super,square]{natbib} % 参考文献引用格式设置宏包
-\RequirePackage[normalem]{ulem}
+\RequirePackage[normalem]{ulem} % 下划线设置宏包
 \RequirePackage{enumitem} % 列表环境宏包
-\RequirePackage[algochapter, boxruled, linesnumbered]{algorithm2e}
-\RequirePackage{etoolbox}
-\RequirePackage{newfloat}
-\RequirePackage[resetlabels]{multibib}
-\RequirePackage[nottoc]{tocbibind} % 快速插入目录
-\RequirePackage{ifoddpage} % 判断是否为奇数
-\RequirePackage{pdfpages}
+\RequirePackage[algochapter, boxruled, linesnumbered]{algorithm2e} % 算法设置宏包
+\RequirePackage{etoolbox} % 工具宏包
+\RequirePackage{newfloat} % 新浮动体宏包
+\RequirePackage[resetlabels]{multibib} % 多参考文献设置宏包
+\RequirePackage[nottoc]{tocbibind} % 快速插入目录宏包
+\RequirePackage{ifoddpage} % 判断是否为奇数宏包
+\RequirePackage{pdfpages} % 插入PDF宏包
 \RequirePackage[titles]{tocloft} % 目录设置宏包
-\RequirePackage[labelformat=simple]{subcaption}
-\RequirePackage{geometry} % 页面布局宏
-\RequirePackage{ifthen}
-\RequirePackage[capitalize]{cleveref} % 要在 hyperref后引用 noabbrev 引用前缀为缩写
-\RequirePackage{lastpage} % 统计总页数宏
-\RequirePackage{color} % 高亮显示用
+\RequirePackage[labelformat=simple]{subcaption} % 子图表设置宏包
+\RequirePackage{geometry} % 页面布局宏包
+\RequirePackage{ifthen} % 条件判断宏包
+\RequirePackage[capitalize]{cleveref} % 引用设置宏包
+\RequirePackage{lastpage} % 统计总页数宏包
+\RequirePackage{color} % 颜色设置宏包
+
 
 % ===============定义 eversion/pversion 选项===============
 \newif\ifOptionPrintVersion % 定义逻辑变量 OptionPrintVersion
@@ -261,15 +265,15 @@
 
     \par{\fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt} % % \noindent无缩进
       本人声明所呈交的毕业设计（论文）是我个人在指导老师指导下进行的工作及取得的成果。尽我所知，除了文中特别加以标注和致谢中所罗列的内容以外，文中不包含其他人或其它机构已经发表或撰写过的成果；也不包含为获得桂林电子科技大学或其他教育机构的学位或证书而使用过的材料。其他同志对本工作的启发和所做的任何贡献均已在毕业设计（论文）中做了明确的说明并表示了谢意。}
-    \\
+      \newline
     \vspace{-1cm}
     \fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{19pt} % \noindent无缩进
     毕业设计（论文）若有不实之处，本人承担一切相关责任。
-    \\
+    \newline
 
     \vspace{2cm}
     \fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{27pt}本人签名：\hspace{84pt} %
-    日期： \\
+    日期： \newline
     \vspace{2cm}
     \noindent
     \begin{center} % \noindent无缩进
@@ -278,16 +282,16 @@
 
     \par{\fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt} %
       桂林电子科技大学有权保留并向国家有关部门或机构送交毕业设计说明书（论文）的复印件，允许毕业设计（论文）被查阅和借阅。本人授权桂林电子科技大学可以公布毕业设计（论文）的全部或部分内容，可以采用影印、缩印或其它复制手段保存、汇编毕业设计（论文）}
-    \\
+      \newline
 
     \vspace{1.5cm}
     \fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt}作者签名：
     \hspace{84pt} %
-    日期： \\ \\
+    日期： \newline \newline
 
     \fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt}导师签名：
     \hspace{84pt} %
-    日期： \\
+    日期： \newline
 
   \end{spacing}
   \ifOptionPrintVersion

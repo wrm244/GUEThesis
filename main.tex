@@ -4,6 +4,7 @@
 %  欢迎使用桂林电子科技大学本科毕业论文LaTex模板(v3.0)
 %    项目：https://github.com/wrm244/GUEThesis
 %     请参考项目目录下的docs文件夹额外说明
+%编译指导：请下载MiKTeX软件后，运行根目录下的makefile.bat即可自动编译
 % --------------------------------------------------------
 \special{dvipdfmx:config z 1}
 % 修改数值是否压缩，1：压缩，0：不压缩，不压缩会加快编译速度，但会增加PDF体积
@@ -35,10 +36,10 @@
 \begin{document}
 \makecover % 封面
 %也可使用另外添加PDF文件作为封面，如盲审封面 \bindpdfcover{盲审学位论文封面(示例).pdf} 
-\originalitydeclaration   % 独创性声明
+\originalitydeclaration % 独创性声明
 %也可使用已签字的扫面版独创性声明PDF文件 \signatureofdeclaration{./docs/独创性声明(示例).pdf} 
-\input{chapters/abstract}    % 摘要
-\thesistableofcontents       % 目录
+\input{chapters/abstract} % 摘要
+\thesistableofcontents   % 目录
 
 % -------------------------------------------------
 %    论文各章节(详见目录下chapter文件夹)
@@ -47,7 +48,7 @@
 \input{chapters/chapter2}
 \input{chapters/chapter3}
 \input{chapters/chapter4}
-\input{chapters/chapter5}   % 可根据需求自行添加章节数
+\input{chapters/chapter5} % 可根据需求自行添加章节数
 \input{chapters/conclusion} % 总结与展望
 % --------------------------------------------------
 %     参考文献
