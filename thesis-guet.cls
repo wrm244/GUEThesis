@@ -1,10 +1,10 @@
 %此文件为全局设置
-\ProvidesClass{./style/thesis-guet}
+\ProvidesClass{thesis-guet}
 
 \LoadClass[12pt,a4paper, openany, twoside]{book} % openright,openany
 \RequirePackage{ifxetex} %需要ifxetex，在LaTeX类和包文件中使用另一个包文件：ifxetex
 \RequireXeTeX %需要使用XeLatex编译tex文件，不然会报错。
-\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\RequirePackage[dvipsnames,svgnames,table]{xcolor}
 \RequirePackage{graphicx} % 图片
 \RequirePackage[font={onehalfspacing, small}, labelsep=space, skip=6pt, figurewithin=none, tablewithin=none]{caption} % figurewithin=none, tablewithin=none 将book 类中向figure of list 添加 10pt间距的命令取消，但也会使得图表章与章之间连续编号，因此需要设置对应计数器每章重置
 \RequirePackage{array}
@@ -22,6 +22,7 @@
 \RequirePackage{xeCJK} % 对全局字体进行设置
 \RequirePackage{datetime}
 \RequirePackage{ifplatform}
+
 % ===============符号说明相关宏===============
 \RequirePackage{framed} % Framing content
 \RequirePackage{multicol} % Multiple columns environment
