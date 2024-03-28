@@ -257,10 +257,11 @@
   \newpage
   \thispagestyle{empty} %没有页眉页脚，空白页
   \begin{spacing}{1.5}
+    {\linespread{1.8}
     \pdfbookmark{独创性（或创新性）声明}{originalitydeclaration}
     \noindent
     \begin{center} % \noindent无缩进
-      \fontsize{14pt}{20pt}\selectfont\bfseries 本科生毕业设计（论文）独创性声名
+      \fontsize{14pt}{20pt}\selectfont\bfseries 本科生毕业设计（论文）独创性声明
     \end{center}
 
     \par{\fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt} % % \noindent无缩进
@@ -281,7 +282,7 @@
     \end{center}
 
     \par{\fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt} %
-      桂林电子科技大学有权保留并向国家有关部门或机构送交毕业设计说明书（论文）的复印件，允许毕业设计（论文）被查阅和借阅。本人授权桂林电子科技大学可以公布毕业设计（论文）的全部或部分内容，可以采用影印、缩印或其它复制手段保存、汇编毕业设计（论文）}
+      桂林电子科技大学有权保留并向国家有关部门或机构送交毕业设计说明书（论文）的复印件，允许毕业设计（论文）被查阅和借阅。本人授权桂林电子科技大学可以公布毕业设计（论文）的全部或部分内容，可以采用影印、缩印或其它复制手段保存、汇编毕业设计（论文）。}
       \newline
 
     \vspace{1.5cm}
@@ -292,7 +293,7 @@
     \fontsize{12pt}{12pt}\selectfont\noindent\null\hspace{24pt}导师签名：
     \hspace{84pt} %
     日期： \newline
-
+    }
   \end{spacing}
   \ifOptionPrintVersion
     {\blankpage}
@@ -318,12 +319,16 @@
 
 
 % ===============字体设置===============
-\newCJKfontfamily{\kaiti}[AutoFakeBold=true,Path = ./fonts/]{GB2312.ttf} %楷体
+\newCJKfontfamily{\kaiti}[AutoFakeBold=true,Path = ./fonts/]{simkai.ttf} %楷体
 \ifwindows
-  \setCJKmainfont[AutoFakeBold=true]{SimSun} %设置xeCJK 中文主字体
-  \newCJKfontfamily{\heiti}[AutoFakeBold=true]{SimHei}
-  \newfontfamily{\heiti@letter}{SimHei}
-  \setallmainfonts{Times New Roman} %设置英文字体
+\newCJKfontfamily{\heiti}[AutoFakeBold=true,Path = ./fonts/]{simhei.ttf} %楷体
+\setCJKmainfont[AutoFakeBold=true,Path = ./fonts/]{simsun.ttc}
+    \setallmainfonts[
+      BoldFont=timesbd.ttf,
+      ItalicFont=timesi.ttf,
+      BoldItalicFont=timesbi.ttf,
+      Path = ./fonts/
+    ]{times.ttf}
 \else
   \ifmacosx
     \setCJKmainfont[AutoFakeBold=true]{Songti SC}
@@ -331,15 +336,14 @@
     \newfontfamily{\heiti@letter}{STHeiti}
     \setallmainfonts{Times New Roman}
   \else
-    \setCJKmainfont[AutoFakeBold=true,Path = ./fonts/]{fzsong.ttf}
-    \newCJKfontfamily{\heiti}[AutoFakeBold=true,Path = ./fonts/]{fzhei.ttf}
-    \newfontfamily{\heiti@letter}{fzhei.ttf}[Path = ./fonts/]
-    \setallmainfonts[
-      BoldFont=timesbd.ttf,
-      ItalicFont=timesi.ttf,
-      BoldItalicFont=timesbi.ttf,
-      Path = ./fonts/
-    ]{times.ttf}
+  \newCJKfontfamily{\heiti}[AutoFakeBold=true,Path = ./fonts/]{simhei.ttf} %楷体
+  \setCJKmainfont[AutoFakeBold=true,Path = ./fonts/]{simsun.ttc}
+      \setallmainfonts[
+        BoldFont=timesbd.ttf,
+        ItalicFont=timesi.ttf,
+        BoldItalicFont=timesbi.ttf,
+        Path = ./fonts/
+      ]{times.ttf}
   \fi
 \fi
 
@@ -431,20 +435,20 @@
 \newcommand{\bachelorchapterformat}{} % 定义\bachelorchapterformat命令，用于修改本科一级标题格式
 
 \titleformat{\chapter}[block]
-{\bachelorchapterformat\fontsize{16pt}{16pt}\selectfont\heiti\thispagestyle{fancy}} % 本科chapter格式
-{\thechapter}{20pt}{} % \thispagestyle{fancy} 需要使用fancyhdr包，并提供了奇偶页不同的风格
+{\bachelorchapterformat\fontsize{14pt}{14pt}\selectfont\heiti\thispagestyle{fancy}} % 本科chapter格式
+{\thechapter}{12pt}{} % \thispagestyle{fancy} 需要使用fancyhdr包，并提供了奇偶页不同的风格
 
 \titleformat{\section}[block]
-{\fontsize{14pt}{14pt}\selectfont\heiti} % \heiti 设置为粗体
-{\thesection}{10pt}{}
+{\fontsize{12pt}{12pt}\selectfont\heiti} % \heiti 设置为粗体
+{\thesection}{5pt}{}
 
 \titleformat{\subsection}[block]
-{\fontsize{14pt}{14pt}\selectfont\kaiti}
+{\fontsize{12pt}{12pt}\selectfont\kaiti}
 {\thesubsection}{0pt}{}
 
 \titleformat{\subsubsection}[block]
 {\fontsize{12pt}{12pt}\selectfont}
-{\thesubsubsection}{6pt}{}
+{\thesubsubsection}{0pt}{}
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}.} % 四级标题格式设置为 1.
 % ===============定义计数器=============== 
 % \newcounter{pseudopage} %自定义一个名字pseudopage新计数器
@@ -456,7 +460,7 @@
 %=========================中文摘要
 \newenvironment{chineseabstract}{
   \renewcommand{\bachelorchapterformat}{\centering}
-  \chapter*{\textbf{摘\quad 要}}% 本科摘要标题是黑体三号加粗
+  \chapter*{\textbf{\fontsize{16pt}{16pt}\selectfont 摘\quad 要}}% 本科摘要标题是黑体三号加粗
   \renewcommand{\bachelorchapterformat}{}
   \setcounter{page}{1} % 定义为第一页
   \pagenumbering{Roman} % 设置页码显示为罗马数字
@@ -492,7 +496,7 @@
 {
 
   \renewcommand{\bachelorchapterformat}{\centering}
-  \chapter*{\bfseries\selectfont\heiti Abstract} % 本科英文摘要标题首字母大写
+  \chapter*{\bfseries{\fontsize{16pt}{16pt}\selectfont  Abstract}} % 本科英文摘要标题首字母大写
   \renewcommand{\bachelorchapterformat}{}
 
 
@@ -552,13 +556,13 @@
 \setlength{\cftbeforechapskip}{0pt}
 
 \cftsetindents{chapter}{0pt}{20pt} % 一个空格约为5磅
-\cftsetindents{section}{0pt}{27pt}
-\cftsetindents{subsection}{0pt}{35pt}
-\cftsetindents{subsubsection}{0pt}{45pt}
+\cftsetindents{section}{0pt}{20pt}
+\cftsetindents{subsection}{0pt}{25pt}
+\cftsetindents{subsubsection}{0pt}{40pt}
 % 本科目录字体大小
-\renewcommand\cftchapfont{\fontsize{15pt}{15pt}\selectfont\heiti}
-\renewcommand\cftsecfont{\fontsize{14pt}{14pt}\selectfont\heiti}
-\renewcommand\cftsubsecfont{\fontsize{14pt}{15pt}\selectfont\kaiti}
+\renewcommand\cftchapfont{\fontsize{14pt}{14pt}\selectfont\heiti}
+\renewcommand\cftsecfont{\fontsize{12pt}{12pt}\selectfont\heiti}
+\renewcommand\cftsubsecfont{\fontsize{12pt}{12pt}\selectfont\kaiti}
 
 
 
@@ -584,7 +588,7 @@
 \crefname{chapter}{}{}
 \crefname{section}{}{}
 \crefname{subsection}{}{}
-\renewcommand{\contentsname}{目\quad 录} %使默认的Contents改为目 录显示
+\renewcommand{\contentsname}{{\fontsize{16pt}{16pt}\selectfont 目\quad 录}} %使默认的Contents改为目 录显示
 \renewcommand{\bibname}{参考文献} %使默认的参考文献名字改为参考文献显示
 \renewcommand{\figurename}{图} %使默认的图名字改为图显示
 \renewcommand{\tablename}{表} %使默认的表名字改为表显示
