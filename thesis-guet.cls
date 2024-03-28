@@ -395,7 +395,6 @@
 \renewcommand{\theequation}{公式 \arabic{chapter}.\arabic{equation}} % 显示公式编号，其格式x-x
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}} % 显示表格编号，其格式x-x
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}} % 显示插图编号，其格式x-x
-%chapter章序号计数器，section节序号计数器，subsection小节序号计数器，subsubsection小小节序号计数器，paragraph段序号计数器，figure插图序号计数器，table表格序号计数器，page页码序号计数器，equation公式序号计数器
 
 
 % ===============设置图表格式===============  
@@ -573,8 +572,6 @@
   \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref {LastPage} 页 }
 }
 
-
-
 % ====================将默认名称改为中文====================
 
 
@@ -737,8 +734,16 @@
 \AtBeginEnvironment{algorithm}{\vspace{9pt}}
 \AfterEndEnvironment{algorithm}{\vspace{9pt}}
 
+\newcommand{\thesisintroduction} 
+{
+\thesiscontent
+\chapter*{引言}
+\setcounter{page}{1} % section计数器清零 
+\addcontentsline{toc}{chapter}{引言} 
+}
+
 % ====================致谢设置====================
-\newcommand{\thesisacknowledgement}
+\newcommand{\thesisacknowledgement} 
 {
   \renewcommand{\bachelorchapterformat}{\centering} % 通过修改\bachelorchapterformat命令让致谢居中
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}} % 只显示一级标题
@@ -759,21 +764,22 @@
 \newcommand{\thesiscontent}
 {
   \newpage
+  \clearpage
   \clearpage{\thispagestyle{empty}\cleardoublepage}
   \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
   \standardheader
   \pagenumbering{arabic}
 }
 
-\pretocmd{\@chapter}
-{
-  \ifdefined\@BODY
-  \else
-    \ifnum\value{chapter}=0
-      \thesiscontent
-    \fi
-  \fi
-}{}{}
+% \pretocmd{\@chapter}
+% {
+%   \ifdefined\@BODY
+%   \else
+%     \ifnum\value{chapter}=0
+%       \thesiscontent
+%     \fi
+%   \fi
+% }{}{}
 
 % ====================附录设置====================
 \newcommand{\thesisappendix}
