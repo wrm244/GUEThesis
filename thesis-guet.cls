@@ -9,7 +9,7 @@
 \RequirePackage[dvipsnames,svgnames,table]{xcolor} % 使用颜色宏包
 \RequirePackage{graphicx} % 图形处理宏包
 \RequirePackage[font={onehalfspacing, small}, labelsep=space, skip=6pt, figurewithin=none, tablewithin=none]{caption} % 图表标题设置宏包
-\RequirePackage{array} % 表格宏包
+\RequirePackage{array,tabularx} % 表格宏包
 \RequirePackage{booktabs} % 三线表宏包
 \RequirePackage{makecell} % 设置封面表格部分横线的宽度
 \RequirePackage[absolute,overlay]{textpos} % 设置文本框位置的宏包
