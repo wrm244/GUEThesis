@@ -402,12 +402,15 @@
 
 
 % ===============设置图表格式===============  
+\DeclareCaptionFont{bfheiti}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti}
 \captionsetup{width=\textwidth - 60pt}
-\captionsetup[subfigure]{aboveskip=2pt, belowskip=2pt} % width=36pt 设置子图标题的宽度 
-\captionsetup[subfoat]{aboveskip=2pt, belowskip=2pt}
-\captionsetup[figure]{aboveskip=3pt, belowskip=0pt} %设置标题与插图或表格之间的垂直距离，设置标题与下文之间的附加垂直距离, 如果标题在插图或表格之下;或标题与上文之间的附加垂直距离, 如果标题在插图或表格之上。该参数的默认值是0pt。为6pt，下面为0pt
-\captionsetup[table]{aboveskip=0pt, belowskip=6pt}
-\captionsetup[longtable]{aboveskip=0pt, belowskip=6pt}
+\captionsetup[subfigure]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti} % width=36pt 设置子图标题的宽度 
+\captionsetup[subfoat]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti}
+\captionsetup[figure]{aboveskip=5.25pt, belowskip=0pt,labelfont=bfheiti,textfont=bfheiti} 
+%设置标题与插图或表格之间的垂直距离，设置标题与下文之间的附加垂直距离, 
+%如果标题在插图或表格之下;或标题与上文之间的附加垂直距离, 如果标题在插图或表格之上。该参数的默认值是0pt。为6pt，下面为0pt
+\captionsetup[table]{aboveskip=5.25pt, belowskip=6pt,labelfont=bfheiti,textfont=bfheiti}
+\captionsetup[longtable]{aboveskip=0pt, belowskip=6pt,labelfont=bfheiti,textfont=bfheiti}
 \setlength{\intextsep}{9pt} % 控制出现在页⾯中间的浮动体（如使⽤了h 选项的浮动体）与上下方文本之间的垂直距离
 % \setlength{\textfloatsep}{6pt} % 控制出现在页⾯的顶部或底部的浮动体与⽂本之间的垂直距离
 
@@ -419,6 +422,7 @@
   \def\@floatboxreset{\centering} %
 }
 \AtBeginEnvironment{tabular}{\small} %表格字体小五
+\AtBeginEnvironment{tabularx}{\small} %表格字体小五
 \AtBeginEnvironment{tabular*}{\small} %表格字体小五
 \AtBeginEnvironment{longtable}{\small} %跨页表格字体小五
 %\captionsetup{format=hang} %caption工具包在加载时可以修改标题的很多方面，也可以通过 captionsetup命令也可以在工具包选项中修改。\captionsetup[浮动体类型]{参数1=选项, 参数2=选项,…}其中可选参数浮动体类型的选项可以是figure或table,如果省略该参数, 则表示这两种浮动体都适用。format：plain默认值,将标题作为普通段落排版。hang将标题从第二行起悬挂缩进排版，缩进宽度等于标题标志加分隔符的宽度。indention设置从标题第二行起的附加缩进宽度, 例如indention=5mm,其默认值是0pt。
