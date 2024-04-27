@@ -402,7 +402,7 @@
 
 
 % ===============设置图表格式===============  
-\DeclareCaptionFont{bfheiti}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti\bfseries} % 设置图表标题字体
+\DeclareCaptionFont{bfheiti}{\fontsize{10.5pt}{12.6pt}\selectfont\heiti\bfseries} % 设置图表标题字体
 \captionsetup{width=\textwidth - 60pt}
 \captionsetup[subfigure]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti} % width=36pt 设置子图标题的宽度 
 \captionsetup[subfoat]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti}
@@ -470,8 +470,7 @@
   \pagenumbering{Roman} % 设置页码显示为罗马数字
 
   \fancyhf{} % 初始化页码页脚布局
-  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）} % 设置页眉
-  \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref{page:tableofcontents} 页}
+  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸} % 设置页眉
 }{
   \ifOptionPrintVersion
     {
@@ -506,8 +505,8 @@
 
   \fancyhf{}
 
-  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）} % 设置页眉
-  \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref{page:tableofcontents} 页}
+  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸} % 设置页眉
+
 
 
 }{
@@ -576,7 +575,7 @@
 
 \newcommand{\standardheader}{
   \fancyhf{}
-  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）}
+  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸}
   \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref {LastPage} 页 }
 }
 
@@ -607,10 +606,10 @@
 {
   \newpage
   \fancyhf{}
-  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）}
-  \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref{page:tableofcontents} 页}
+  \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸}
+  
   \renewcommand{\bachelorchapterformat}{\centering}
-  \begin{spacing}{2}%本科目录两倍行距
+  \begin{spacing}{1.5}%本科目录两倍行距
     \tableofcontents
   \end{spacing}
   \renewcommand{\bachelorchapterformat}{} % 还原初始设置
@@ -761,7 +760,7 @@
   \addcontentsline{toc}{chapter}{谢辞}
   % \markboth{致谢}{致谢} %\markboth{<左面页眉>}{<右面页眉>}
   \fancyhf{}
-  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）}
+  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸}
   \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref {LastPage} 页 }
   \thispagestyle{fancy}
   \normalsize % 设置字体为小四
@@ -869,7 +868,7 @@
 \pretocmd{\bibliography}{
   \newpage
   \fancyhf{}
-  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）}
+  \fancyhead[CE,CO]{\fontsize{10.5pt}{12.6pt}\selectfont 桂林电子科技大学毕业设计（论文）报告用纸}
   \fancyhead[RE,RO]{\fontsize{10.5pt}{12.6pt}\selectfont 第\thepage 页\enspace 共 \pageref {LastPage} 页 }
   \interlinepenalty=10000
   \begin{spacing}{1.667}
