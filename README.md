@@ -44,12 +44,7 @@ git clone https://github.com/wrm244/GUEThsis.git
 
 #### 转 word 格式
 
-请看：[转 word 命令](./docs/%E8%BD%ACword%E5%91%BD%E4%BB%A4.md)
-
-**注意：**
-
-- 使用 LaTeX 转 Word 是通过 Pandoc 来实现，因此需要配置好 Pandoc；
-- 目前尚且存在转换后，图片不存在的问题（由于 pandoc 不支持读取多个文件夹图片的原因）。
+请使用Adobe Acrobat pro软件进行pdf转word文档，格式完美
 
 ### Github Action 自动化集成
 
