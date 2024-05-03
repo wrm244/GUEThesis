@@ -65,8 +65,21 @@
 \RequirePackage{ifthen} % 条件判断宏包
 \RequirePackage[capitalize]{cleveref} % 引用设置宏包
 \RequirePackage{lastpage} % 统计总页数宏包
-\RequirePackage{color} % 颜色设置宏包
-
+\RequirePackage{color,listings} % 颜色设置宏包
+\setmonofont{consola}[Path = ./fonts/consolas/]
+\lstset{
+  breaklines,
+    numbers=left,
+    basicstyle=\small,
+    numberstyle= \small, 
+    keywordstyle= \color{ blue!70},
+    commentstyle= \color{red!50!green!50!blue!50}, 
+    frame=shadowbox, % 阴影效果
+    rulesepcolor= \color{ red!20!green!20!blue!20} ,
+    escapeinside=``, % 英文分号中可写入中文
+    xleftmargin=5em,xrightmargin=4em, aboveskip=2em,
+    framexleftmargin=2em,basicstyle=\ttfamily
+} 
 
 % ===============定义 eversion/pversion 选项===============
 \newif\ifOptionPrintVersion % 定义逻辑变量 OptionPrintVersion
@@ -411,6 +424,8 @@
 %如果标题在插图或表格之下;或标题与上文之间的附加垂直距离, 如果标题在插图或表格之上。该参数的默认值是0pt。为6pt，下面为0pt
 \captionsetup[table]{aboveskip=5.25pt, belowskip=6pt,labelfont=bfheiti,textfont=bfheiti}
 \captionsetup[longtable]{aboveskip=0pt, belowskip=6pt,labelfont=bfheiti,textfont=bfheiti}
+\captionsetup[lstlisting]{aboveskip=5.25pt, belowskip=6pt,labelfont=bfheiti,textfont=bfheiti}
+\renewcommand{\lstlistingname}{代码}
 \setlength{\intextsep}{9pt} % 控制出现在页⾯中间的浮动体（如使⽤了h 选项的浮动体）与上下方文本之间的垂直距离
 % \setlength{\textfloatsep}{6pt} % 控制出现在页⾯的顶部或底部的浮动体与⽂本之间的垂直距离
 
