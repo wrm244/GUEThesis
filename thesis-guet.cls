@@ -415,7 +415,7 @@
 
 
 % ===============设置图表格式===============  
-\DeclareCaptionFont{bfheiti}{\fontsize{10.5pt}{12.6pt}\selectfont\heiti\bfseries} % 设置图表标题字体
+\DeclareCaptionFont{bfheiti}{\fontsize{10.5pt}{12.6pt}\selectfont\heiti} % 设置图表标题字体
 \captionsetup{width=\textwidth - 60pt}
 \captionsetup[subfigure]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti} % width=36pt 设置子图标题的宽度 
 \captionsetup[subfoat]{aboveskip=5.25pt, belowskip=2pt,labelfont=bfheiti,textfont=bfheiti}
