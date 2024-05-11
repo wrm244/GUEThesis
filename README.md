@@ -3,6 +3,9 @@
 
 此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README与论文的校徽仅仅作为标识，如有侵权请联系[邮箱](mailto:wrm244@qq.com)，将会删除。
 
+> [!TIP]
+> 在这里也提供了word模板，里面包括很多设定好的样式，直接应用即可，来尝试一下吧！[点击查看](./docs/桂电本科毕业论文Word模板.docx)
+
 ## 模板示例
 <p align=center>
 <img src="./docs/main_页面_01.png" width="370"/><img src="./docs/main_页面_02.png" width="370"/><img src="./docs/main_页面_03.png" width="370"/><img src="./docs/main_页面_05.png" width="370"/><img src="./docs/main_页面_07.png" width="370"/><img src="./docs/main_页面_17.png" width="370"/>
