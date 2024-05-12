@@ -5,6 +5,10 @@
 
 > [!TIP]
 > 在这里也提供了word模板，里面包括很多设定好的样式，直接应用即可，来尝试一下吧！[点击下载](https://raw.githubusercontent.com/wrm244/GUEThesis/main/docs/%E6%A1%82%E7%94%B5%E6%9C%AC%E7%A7%91%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87Word%E6%A8%A1%E6%9D%BF.docx)
+<p align=center>
+<img src="https://github.com/wrm244/GUEThesis/assets/54385511/da226a7f-0766-4231-bd33-c8e4198fefae" width="305"/>
+<img src="https://github.com/wrm244/GUEThesis/assets/54385511/412c7258-e259-4965-a7d4-93e85beb28d3" width="370"/>
+</p>
 
 ## 模板示例
 <p align=center>
