@@ -1,4 +1,5 @@
 ## 桂林电子科技大学本科毕业论文LaTex模板 <img src="./docs/GUETLOGO.png" width="90" height="90" align="right">
+> [!WARNING]
 > 请注意：由于在线Overleaf上传模板比较繁琐，暂时没更新，请在本页面直接下载代码压缩包或者[点击下载](https://github.com/wrm244/GUEThesis/archive/refs/heads/main.zip)，自己上传即可
 
 此项目提供用于排版桂林电子科技大学本科毕业论文的 LaTeX 模板，旨在帮助桂林电子科技大学同学高效地完成毕业论文的写作(注重内容、忽略排版)。桂林电子科技大学校徽图片的版权归桂林电子科技大学所有，README与论文的校徽仅仅作为标识，如有侵权请联系[邮箱](mailto:wrm244@qq.com)，将会删除。
