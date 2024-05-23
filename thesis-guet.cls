@@ -896,7 +896,7 @@
 
 \newcommand{\bstlabelmark}{lo}
 \newcommand{\thesisloadbibliography}[2][]{
-  \normalsize
+  \small
   \ifthenelse{ %\ifthenelse{判断条件}{肯定结构}{否定结构}
     \equal{#1}{large} %\equal{#1}{nocite} %判断#1是否等于notice
   }{
