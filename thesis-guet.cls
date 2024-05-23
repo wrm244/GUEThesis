@@ -874,7 +874,7 @@
     \interlinepenalty=10000
     \begin{spacing}{1.667}
       \thispagestyle{fancy}
-      \normalsize
+      \small
       }{
     \end{spacing}
   \end{thebibliography}
@@ -888,7 +888,7 @@
   \interlinepenalty=10000
   \begin{spacing}{1.667}
     }{}{}
-
+    \small
     \apptocmd{\bibliography}{
   \end{spacing}
 }{}{}
